@@ -1,0 +1,22 @@
+{
+  "name": "webpack4test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "css-loader": "^4.2.2",
+    "style-loader": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"build":"webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
