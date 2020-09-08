@@ -10,11 +10,12 @@
   },
   "devDependencies": {
     "css-loader": "^4.2.2",
+    "file-loader": "^6.1.0",
     "style-loader": "^1.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"build":"webpack"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
