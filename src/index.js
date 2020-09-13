@@ -1,21 +1,16 @@
-import _ from 'lodash';
-import './style.css';
-import Icon from './icon.png';
-import Data from './data.xml'
-function component(){
-	var element = document.createElement('div');
-	
-	element.innerHTML = _.join(['hello','webpack'],' ');
-	element.classList.add('hello');
-	
-	//将图片导入现有的div
-	var myIcon = new Image();
-	myIcon.src = Icon;
-	element.appendChild(myIcon);
-	
-	console.log(Data)
-	
-	return element;
-}
+import { cube } from './math.js';
 
-document.body.appendChild(component());
+function component() {
+
+	var element = document.createElement('pre');
+
+   // lodash 是由当前 script 脚本 import 导入进来的
+   element.innerHTML = [
+     'Hello webpack!',
+     '5 cubed is equal to ' + cube(5)
+   ].join('\n\n');
+
+    return element;
+  }
+
+  document.body.appendChild(component());
